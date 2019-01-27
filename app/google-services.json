@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "946978610735",
+    "firebase_url": "https://masproject1-c5d27.firebaseio.com",
+    "project_id": "masproject1-c5d27",
+    "storage_bucket": "masproject1-c5d27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946978610735:android:410bdc334e11b958",
+        "android_client_info": {
+          "package_name": "com.example.queenshivib.project1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946978610735-7m5ls3j9lt8a7o411t9ol1snagbolbjf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJrGVkG7UtGwBwswMc0gGOc0xBIltNuC8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
