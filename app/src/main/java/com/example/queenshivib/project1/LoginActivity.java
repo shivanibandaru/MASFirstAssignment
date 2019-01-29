@@ -121,7 +121,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 //        // TODO: go to the welcome screen
 //    }
 
-    // TODO: Hook up to some "Create Account" button
     private void createAccount() {
         //email and password at time of button click
         String email = mEmailView.getText().toString();
@@ -141,10 +140,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
+                            //TODO: remove this when we actually navigate to the welcome screen
+                            Toast.makeText(LoginActivity.this, "Success",
+                                    Toast.LENGTH_SHORT).show();
                             // TODO: go to the welcome screen
                         } else {
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(LoginActivity.this, "Could not create account.",
+                            //TODO: keep this message? Make our own message?
+                            Toast.makeText(LoginActivity.this, task.getException().getMessage(),
                                     Toast.LENGTH_SHORT).show();
                             // TODO: stay on the sign in/create account page
                         }
@@ -152,7 +155,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 });
     }
 
-    // TODO: Hook up to some "Sign In" button
     private void signIn() {
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
@@ -167,10 +169,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
+                            //TODO: remove this when we actually navigate to the welcome screen
+                            Toast.makeText(LoginActivity.this, "Success",
+                                    Toast.LENGTH_SHORT).show();
                             // TODO: go to welcome screen
                         } else {
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(LoginActivity.this, "Could not sign in.",
+                            //TODO: keep this message? Make our own message?
+                            Toast.makeText(LoginActivity.this, task.getException().getMessage(),
                                     Toast.LENGTH_SHORT).show();
                             // TODO: stay on the sign in/create account page
                         }
